@@ -1,3 +1,4 @@
+// understanding enum
 #include<iostream>
 using namespace std;
 
