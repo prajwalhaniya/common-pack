@@ -10,15 +10,15 @@ function sleep(ms) {
 
 async function startProcess() {
     await sleep(2);
-    await db.addProcessInfo("requestId-1", 1, "step1");
+    await db.addProcessInfo("requestId-2", 1, "step1");
     await sleep(10);
-    await db.addProcessInfo("requestId-1", 2, "step2");
+    await db.addProcessInfo("requestId-2", 2, "step2");
     await sleep(10);
-    await db.addProcessInfo("requestId-1", 3, "step3");
+    await db.addProcessInfo("requestId-2", 3, "step3");
     await sleep(10);
-    await db.addProcessInfo("requestId-1", 4, "step4");
+    await db.addProcessInfo("requestId-2", 4, "step4");
     await sleep(10);
-    await db.addProcessInfo("requestId-1", 5, "step5");
+    await db.addProcessInfo("requestId-2", 5, "step5");
 }
 
 app.get('/start-process', async (req, res) => {
